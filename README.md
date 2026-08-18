@@ -1,61 +1,62 @@
 # Ghost Manifesto
 
-Sito personale a pagina singola che presenta un manifesto filosofico in
-dieci tesi sul rapporto tra tecnologia, attenzione e identità personale —
-più una serie di pagine tema che approfondiscono argomenti specifici
-(anonimato, crittografia, blockchain, software libero...) con strumenti
-concreti, tutti open source.
+A personal single-page site presenting a philosophical manifesto in ten
+theses on the relationship between technology, attention and personal
+identity — plus a series of theme pages that dig into specific topics
+(anonymity, encryption, blockchain, free software...) with concrete,
+open-source tools.
 
-**Sito live:** https://TUO-USERNAME.github.io/ghost-manifesto/
+**Live site:** https://TUO-USERNAME.github.io/ghost-manifesto/
 
-## Cos'è
+## What it is
 
-Non è un trattato tecnico né un invito a rifiutare la tecnologia. È un
-punto fermo: dieci tesi che usano la metafora della protezione
-anti-malware — non "hacking del sé" (postura aggressiva) ma difesa di un
-territorio conteso, l'attenzione umana, contesa tra il capitale
-(piattaforme, algoritmi di engagement), il sé sociale/performativo, e il
-sé creativo/profondo.
+It's not a technical treatise, nor an invitation to reject technology.
+It's a stake in the ground: ten theses that use the anti-malware
+protection metaphor — not "hacking the self" (an aggressive posture) but
+defending a contested territory, human attention, fought over between
+capital (platforms, engagement algorithms), the social/performative
+self, and the deeper, creative self.
 
-## Lingue
+## Languages
 
-Il sito è in tre lingue — EN, FR, IT — selezionabili dal menu in alto.
-La lingua scelta resta attiva mentre navighi tra le pagine, ma si azzera
-alla chiusura della scheda: nessuna persistenza tra sessioni, per scelta.
+The site is available in three languages — EN, FR, IT — selectable from
+the top menu. The chosen language stays active while navigating between
+pages, but resets when the tab is closed: no persistence across
+sessions, by design.
 
 ## Privacy
 
-Il sito non raccoglie né tratta alcun dato personale, non installa
-cookie e non fa nessuna chiamata a servizi esterni (font self-hosted,
-niente analytics, niente pixel di tracciamento). Nessuna cookie policy
-necessaria, perché non c'è nulla da consentire.
+The site collects and processes no personal data, sets no cookies, and
+makes no calls to external services (self-hosted fonts, no analytics, no
+tracking pixels). No cookie policy needed, because there's nothing to
+consent to.
 
-## Struttura
+## Structure
 
 ```
-├── index.html          ← home, con le dieci tesi
+├── index.html          ← home page, with the ten theses
 ├── style.css
-├── fonts/               ← font self-hosted
-└── temi/                ← una pagina per ciascuna area tematica
+├── fonts/               ← self-hosted fonts
+└── temi/                ← one page per theme area
 ```
 
-## Contribuire
+## Contributing
 
-Segnalazioni, correzioni e proposte sono benvenute — apri una issue o
-una pull request. Un paio di cose da tenere a mente per restare coerenti
-con lo spirito del progetto:
+Reports, corrections and proposals are welcome — open an issue or a pull
+request. A few things to keep in mind to stay consistent with the
+project's spirit:
 
-- ogni testo va duplicato nelle tre lingue (EN, FR, IT) — niente
-  contenuti presenti in una sola lingua
-- nessuna chiamata a servizi esterni (niente CDN, niente font remoti,
-  niente tracker): tutto va servito localmente
-- nella sezione "Strumenti" di ogni pagina tema, solo software open
-  source verificabile, non semplicemente gratuito
+- every piece of text must be duplicated in all three languages (EN, FR,
+  IT) — no content in a single language only
+- no calls to external services (no CDNs, no remote fonts, no
+  trackers): everything must be served locally
+- in each theme page's "Tools" section, only verifiable open-source
+  software, not merely free-of-charge software
 
-## Licenza
+## License
 
-I contenuti di questo sito (testi, tesi, pagine tema) sono rilasciati con
-licenza **[Creative Commons Attribution 4.0 International (CC BY
-4.0)](LICENSE)**: chiunque può condividerli, riutilizzarli e adattarli,
-anche per scopi commerciali, a patto di citare la fonte. Vedi il file
-[LICENSE](LICENSE) per il testo completo.
+The content of this site (texts, theses, theme pages) is released under
+a **[Creative Commons Attribution 4.0 International (CC BY
+4.0)](LICENSE)** license: anyone can share, reuse and adapt it, even for
+commercial purposes, as long as they credit the source. See the
+[LICENSE](LICENSE) file for the full text.
