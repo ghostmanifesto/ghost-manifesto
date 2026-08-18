@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attenzione — Ghost Manifesto</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .theme-hero{
+    min-height: 46vh;
+    padding-top: 140px;
+  }
+  .theme-hero .hero-title{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+  .theme-hero .hero-ghost{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+
+  .back-link{
+    display:inline-block;
+    margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ash);
+    text-decoration: none;
+  }
+  .back-link:hover{ color: var(--patina); }
+
+  .tools{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .tool{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    color: inherit;
+  }
+  .tool:last-child{ border-bottom: none; }
+  .tool-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--bone);
+  }
+  .tool-desc{
+    display:block;
+    margin-top: 4px;
+    font-size: 0.92rem;
+    color: var(--ash);
+    font-family: 'Newsreader', serif;
+  }
+  .tool-arrow{
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--patina);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="wordmark">GHOST<span>MANIFESTO</span></a>
+  <nav class="topnav">
+    <div class="langs" role="group" aria-label="Lingua / Language / Langue">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="fr">FR</button>
+      <button type="button" data-set-lang="it">IT</button>
+    </div>
+    <div class="pages">
+      <a href="../index.html#about"><span data-lang="it">About</span><span data-lang="en" class="lang-hidden">About</span><span data-lang="fr" class="lang-hidden">À propos</span></a>
+      <a href="../index.html#temi"><span data-lang="it">Temi</span><span data-lang="en" class="lang-hidden">Themes</span><span data-lang="fr" class="lang-hidden">Thèmes</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero theme-hero">
+    <div class="hero-ghost" aria-hidden="true">ATTENZIONE</div>
+    <h1 class="hero-title">
+      <span data-lang="it">Attenzione</span>
+      <span data-lang="en" class="lang-hidden">Attention</span>
+      <span data-lang="fr" class="lang-hidden">Attention</span>
+    </h1>
+    <p class="hero-sub" data-lang="it">Il territorio che tutti vogliono, e che pochi difendono.</p>
+    <p class="hero-sub lang-hidden" data-lang="en">The territory everyone wants, and few defend.</p>
+    <p class="hero-sub lang-hidden" data-lang="fr">Le territoire que tout le monde veut, et que peu défendent.</p>
+  </section>
+
+  <section>
+    <a class="back-link" href="../index.html">
+      <span data-lang="it">← Torna al Manifesto</span>
+      <span data-lang="en" class="lang-hidden">← Back to the Manifesto</span>
+      <span data-lang="fr" class="lang-hidden">← Retour au Manifeste</span>
+    </a>
+
+    <div class="about">
+      <p data-lang="it">Il tuo telefono non è progettato per servirti. È progettato per massimizzare il tempo che passi a guardarlo — sono due obiettivi che a volte coincidono, e molto più spesso no. Ogni notifica, ogni scroll infinito, ogni autoplay è una decisione di design presa da qualcun altro, per un obiettivo che non è il tuo.</p>
+      <p data-lang="en" class="lang-hidden">Your phone isn't designed to serve you. It's designed to maximize the time you spend looking at it — two goals that sometimes coincide, and far more often don't. Every notification, every infinite scroll, every autoplay is a design decision made by someone else, for a goal that isn't yours.</p>
+      <p data-lang="fr" class="lang-hidden">Votre téléphone n'est pas conçu pour vous servir. Il est conçu pour maximiser le temps que vous passez à le regarder — deux objectifs qui coïncident parfois, et bien plus souvent non. Chaque notification, chaque défilement infini, chaque lecture automatique est une décision de conception prise par quelqu'un d'autre, pour un objectif qui n'est pas le vôtre.</p>
+
+      <p data-lang="it">Riprendersi l'attenzione non significa buttare il telefono nel fiume. Significa rimettere l'attrito dove qualcun altro lo aveva tolto apposta — un secondo in più prima di aprire un'app, un limite che hai scelto tu invece che uno pensato per farti restare. Piccole barriere, messe di proposito, nei punti in cui prima non c'era resistenza.</p>
+      <p data-lang="en" class="lang-hidden">Reclaiming your attention doesn't mean throwing your phone in the river. It means putting friction back where someone else deliberately removed it — one more second before opening an app, a limit you chose instead of one designed to keep you there. Small barriers, placed on purpose, exactly where there used to be no resistance at all.</p>
+      <p data-lang="fr" class="lang-hidden">Se réapproprier son attention ne signifie pas jeter son téléphone à la rivière. Cela signifie remettre de la friction là où quelqu'un d'autre l'avait délibérément retirée — une seconde de plus avant d'ouvrir une application, une limite que vous avez choisie plutôt qu'une pensée pour vous faire rester. De petites barrières, posées exprès, précisément là où il n'y avait plus de résistance.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">
+      <span data-lang="it">Strumenti</span>
+      <span data-lang="en" class="lang-hidden">Tools</span>
+      <span data-lang="fr" class="lang-hidden">Outils</span>
+    </span>
+
+    <div class="tools">
+
+      <a class="tool" href="https://ublockorigin.com/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">uBlock Origin</span>
+          <span class="tool-desc" data-lang="it">Blocca pubblicità e tracker alla radice, riducendo anche il rumore visivo pensato per catturare lo sguardo.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">Blocks ads and trackers at the source, also cutting the visual noise designed to catch your eye.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Bloque publicités et traceurs à la source, réduisant aussi le bruit visuel conçu pour capter le regard.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://www.netguard.me/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">NetGuard</span>
+          <span class="tool-desc" data-lang="it">Un firewall open source che ti permette di tagliare l'accesso a internet alle app che ti risucchiano il tempo, invece che affidarti solo alla forza di volontà.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">An open-source firewall that lets you cut off internet access to the apps that eat your time, instead of relying on willpower alone.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Un pare-feu open source qui vous permet de couper l'accès à internet aux applications qui dévorent votre temps, plutôt que de compter uniquement sur votre volonté.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://f-droid.org/en/packages/com.apps.adrcotfas.goodtime/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Goodtime</span>
+          <span class="tool-desc" data-lang="it">Un timer Pomodoro minimale e open source: intervalli di lavoro protetti, senza doverti fidare di un'app che non puoi ispezionare.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">A minimal, open-source Pomodoro timer: protected work intervals, without having to trust an app you can't inspect.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Un minuteur Pomodoro minimaliste et open source : des intervalles de travail protégés, sans avoir à faire confiance à une application que vous ne pouvez pas inspecter.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p data-lang="it">Ghost Manifesto — un punto fermo, non un prodotto.</p>
+  <p data-lang="en" class="lang-hidden">Ghost Manifesto — a stake in the ground, not a product.</p>
+  <p data-lang="fr" class="lang-hidden">Ghost Manifesto — un point d'ancrage, non un produit.</p>
+  <p data-lang="it">Nessun dato personale viene raccolto o trattato. Nessun cookie viene installato.</p>
+  <p data-lang="en" class="lang-hidden">No personal data is collected or processed. No cookies are set.</p>
+  <p data-lang="fr" class="lang-hidden">Aucune donnée personnelle n'est collectée ni traitée. Aucun cookie n'est déposé.</p>
+</footer>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('lang-hidden', el.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.body.className = 'lang-' + lang;
+    try{ sessionStorage.setItem('gm-lang', lang); }catch(e){}
+  }
+
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
+  });
+
+  var storedLang;
+  try{ storedLang = sessionStorage.getItem('gm-lang'); }catch(e){}
+  setLang(storedLang || 'en');
+</script>
+
+</body>
+</html>

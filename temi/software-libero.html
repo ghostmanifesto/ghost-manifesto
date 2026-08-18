@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software libero — Ghost Manifesto</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .theme-hero{
+    min-height: 46vh;
+    padding-top: 140px;
+  }
+  .theme-hero .hero-title{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+  .theme-hero .hero-ghost{ font-size: clamp(1.9rem, 6.5vw, 4.2rem); }
+
+  .back-link{
+    display:inline-block;
+    margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ash);
+    text-decoration: none;
+  }
+  .back-link:hover{ color: var(--patina); }
+
+  .tools{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .tool{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    color: inherit;
+  }
+  .tool:last-child{ border-bottom: none; }
+  .tool-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--bone);
+  }
+  .tool-desc{
+    display:block;
+    margin-top: 4px;
+    font-size: 0.92rem;
+    color: var(--ash);
+    font-family: 'Newsreader', serif;
+  }
+  .tool-arrow{
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--patina);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="wordmark">GHOST<span>MANIFESTO</span></a>
+  <nav class="topnav">
+    <div class="langs" role="group" aria-label="Lingua / Language / Langue">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="fr">FR</button>
+      <button type="button" data-set-lang="it">IT</button>
+    </div>
+    <div class="pages">
+      <a href="../index.html#about"><span data-lang="it">About</span><span data-lang="en" class="lang-hidden">About</span><span data-lang="fr" class="lang-hidden">À propos</span></a>
+      <a href="../index.html#temi"><span data-lang="it">Temi</span><span data-lang="en" class="lang-hidden">Themes</span><span data-lang="fr" class="lang-hidden">Thèmes</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero theme-hero">
+    <div class="hero-ghost" aria-hidden="true">SOFTWARE LIBERO</div>
+    <h1 class="hero-title">
+      <span data-lang="it">Software libero</span>
+      <span data-lang="en" class="lang-hidden">Free Software</span>
+      <span data-lang="fr" class="lang-hidden">Logiciel libre</span>
+    </h1>
+    <p class="hero-sub" data-lang="it">Usare strumenti che non hanno bisogno di venderti per esistere.</p>
+    <p class="hero-sub lang-hidden" data-lang="en">Using tools that don't need to sell you to exist.</p>
+    <p class="hero-sub lang-hidden" data-lang="fr">Utiliser des outils qui n'ont pas besoin de vous vendre pour exister.</p>
+  </section>
+
+  <section>
+    <a class="back-link" href="../index.html">
+      <span data-lang="it">← Torna al Manifesto</span>
+      <span data-lang="en" class="lang-hidden">← Back to the Manifesto</span>
+      <span data-lang="fr" class="lang-hidden">← Retour au Manifeste</span>
+    </a>
+
+    <div class="about">
+      <p data-lang="it">Un programma che non puoi ispezionare è una scatola nera a cui hai dato accesso alla tua vita digitale sulla fiducia. Il software libero non è (solo) una questione di prezzo: è la differenza tra usare uno strumento e dipendere da una promessa che nessuno può verificare.</p>
+      <p data-lang="en" class="lang-hidden">A program you can't inspect is a black box you've given access to your digital life, on trust alone. Free software isn't (just) a matter of price: it's the difference between using a tool and depending on a promise no one can verify.</p>
+      <p data-lang="fr" class="lang-hidden">Un programme que vous ne pouvez pas inspecter est une boîte noire à laquelle vous avez donné accès à votre vie numérique, sur la seule confiance. Le logiciel libre n'est pas (seulement) une question de prix : c'est la différence entre utiliser un outil et dépendre d'une promesse que personne ne peut vérifier.</p>
+
+      <p data-lang="it">Non serve saper leggere codice per beneficiare di questo — basta che qualcuno possa farlo, e che lo faccia davvero. È lo stesso motivo per cui ti fidi di più di un contratto che chiunque può leggere che di uno scritto in una lingua che solo l'altra parte capisce.</p>
+      <p data-lang="en" class="lang-hidden">You don't need to know how to read code to benefit from this — it's enough that someone can, and actually does. It's the same reason you trust a contract anyone can read more than one written in a language only the other party understands.</p>
+      <p data-lang="fr" class="lang-hidden">Il n'est pas nécessaire de savoir lire du code pour en profiter — il suffit que quelqu'un le puisse, et le fasse réellement. C'est la même raison pour laquelle vous faites davantage confiance à un contrat que n'importe qui peut lire qu'à un contrat rédigé dans une langue que seule l'autre partie comprend.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">
+      <span data-lang="it">Strumenti</span>
+      <span data-lang="en" class="lang-hidden">Tools</span>
+      <span data-lang="fr" class="lang-hidden">Outils</span>
+    </span>
+
+    <div class="tools">
+
+      <a class="tool" href="https://f-droid.org/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">F-Droid</span>
+          <span class="tool-desc" data-lang="it">Uno store di app Android composto solo da software libero, verificabile e senza tracker nascosti.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">An Android app store made entirely of free software, verifiable and without hidden trackers.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Une boutique d'applications Android composée uniquement de logiciels libres, vérifiables et sans traceurs cachés.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://www.libreoffice.org/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">LibreOffice</span>
+          <span class="tool-desc" data-lang="it">Una suite per scrivere, calcolare e presentare che nessuna azienda può scegliere di spegnere.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">A suite for writing, spreadsheets and presentations that no company can decide to shut down.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Une suite pour écrire, calculer et présenter qu'aucune entreprise ne peut décider d'éteindre.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://linuxmint.com/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Linux Mint</span>
+          <span class="tool-desc" data-lang="it">Un sistema operativo completo, gratuito, che puoi installare, modificare e capire fino in fondo.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">A complete, free operating system you can install, modify, and understand all the way down.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Un système d'exploitation complet et gratuit, que vous pouvez installer, modifier et comprendre jusqu'au bout.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p data-lang="it">Ghost Manifesto — un punto fermo, non un prodotto.</p>
+  <p data-lang="en" class="lang-hidden">Ghost Manifesto — a stake in the ground, not a product.</p>
+  <p data-lang="fr" class="lang-hidden">Ghost Manifesto — un point d'ancrage, non un produit.</p>
+  <p data-lang="it">Nessun dato personale viene raccolto o trattato. Nessun cookie viene installato.</p>
+  <p data-lang="en" class="lang-hidden">No personal data is collected or processed. No cookies are set.</p>
+  <p data-lang="fr" class="lang-hidden">Aucune donnée personnelle n'est collectée ni traitée. Aucun cookie n'est déposé.</p>
+</footer>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('lang-hidden', el.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.body.className = 'lang-' + lang;
+    try{ sessionStorage.setItem('gm-lang', lang); }catch(e){}
+  }
+
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
+  });
+
+  var storedLang;
+  try{ storedLang = sessionStorage.getItem('gm-lang'); }catch(e){}
+  setLang(storedLang || 'en');
+</script>
+
+</body>
+</html>

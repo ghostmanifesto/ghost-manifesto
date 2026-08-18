@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crittografia — Ghost Manifesto</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .theme-hero{
+    min-height: 46vh;
+    padding-top: 140px;
+  }
+  .theme-hero .hero-title{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+  .theme-hero .hero-ghost{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+
+  .back-link{
+    display:inline-block;
+    margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ash);
+    text-decoration: none;
+  }
+  .back-link:hover{ color: var(--patina); }
+
+  .tools{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .tool{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    color: inherit;
+  }
+  .tool:last-child{ border-bottom: none; }
+  .tool-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--bone);
+  }
+  .tool-desc{
+    display:block;
+    margin-top: 4px;
+    font-size: 0.92rem;
+    color: var(--ash);
+    font-family: 'Newsreader', serif;
+  }
+  .tool-arrow{
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--patina);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="wordmark">GHOST<span>MANIFESTO</span></a>
+  <nav class="topnav">
+    <div class="langs" role="group" aria-label="Lingua / Language / Langue">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="fr">FR</button>
+      <button type="button" data-set-lang="it">IT</button>
+    </div>
+    <div class="pages">
+      <a href="../index.html#about"><span data-lang="it">About</span><span data-lang="en" class="lang-hidden">About</span><span data-lang="fr" class="lang-hidden">À propos</span></a>
+      <a href="../index.html#temi"><span data-lang="it">Temi</span><span data-lang="en" class="lang-hidden">Themes</span><span data-lang="fr" class="lang-hidden">Thèmes</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero theme-hero">
+    <div class="hero-ghost" aria-hidden="true">CRITTOGRAFIA</div>
+    <h1 class="hero-title">
+      <span data-lang="it">Crittografia</span>
+      <span data-lang="en" class="lang-hidden">Encryption</span>
+      <span data-lang="fr" class="lang-hidden">Chiffrement</span>
+    </h1>
+    <p class="hero-sub" data-lang="it">Il diritto di dire qualcosa a qualcuno, e a nessun altro.</p>
+    <p class="hero-sub lang-hidden" data-lang="en">The right to say something to someone, and to no one else.</p>
+    <p class="hero-sub lang-hidden" data-lang="fr">Le droit de dire quelque chose à quelqu'un, et à personne d'autre.</p>
+  </section>
+
+  <section>
+    <a class="back-link" href="../index.html">
+      <span data-lang="it">← Torna al Manifesto</span>
+      <span data-lang="en" class="lang-hidden">← Back to the Manifesto</span>
+      <span data-lang="fr" class="lang-hidden">← Retour au Manifeste</span>
+    </a>
+
+    <div class="about">
+      <p data-lang="it">Ogni volta che scrivi un messaggio a qualcuno, stai facendo una scelta anche se non te ne accorgi: chi altro può leggerlo? Un fornitore di servizi che promette di "non guardare" non è la stessa cosa di un sistema costruito in modo che guardare sia matematicamente impossibile. La differenza tra una promessa e una proprietà tecnica è la differenza tra fiducia e verifica.</p>
+      <p data-lang="en" class="lang-hidden">Every time you write a message to someone, you're making a choice even if you don't notice it: who else can read it? A service provider that promises "not to look" isn't the same thing as a system built so that looking is mathematically impossible. The difference between a promise and a technical property is the difference between trust and verification.</p>
+      <p data-lang="fr" class="lang-hidden">Chaque fois que vous écrivez un message à quelqu'un, vous faites un choix même sans vous en rendre compte : qui d'autre peut le lire ? Un fournisseur de services qui promet de « ne pas regarder » n'est pas la même chose qu'un système construit de sorte que regarder soit mathématiquement impossible. La différence entre une promesse et une propriété technique, c'est la différence entre la confiance et la vérification.</p>
+
+      <p data-lang="it">Cifrare le proprie comunicazioni non è un gesto per chi ha qualcosa da nascondere: è l'equivalente digitale di chiudere una busta prima di spedirla. Nessuno trova sospetto farlo con la posta ordinaria — dovrebbe essere altrettanto normale farlo con un messaggio.</p>
+      <p data-lang="en" class="lang-hidden">Encrypting your communications isn't a gesture for people with something to hide: it's the digital equivalent of sealing an envelope before mailing it. No one finds that suspicious with ordinary mail — it should be just as normal to do with a message.</p>
+      <p data-lang="fr" class="lang-hidden">Chiffrer ses communications n'est pas un geste réservé à ceux qui ont quelque chose à cacher : c'est l'équivalent numérique de fermer une enveloppe avant de l'envoyer. Personne ne trouve cela suspect pour le courrier ordinaire — cela devrait être tout aussi normal pour un message.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">
+      <span data-lang="it">Strumenti</span>
+      <span data-lang="en" class="lang-hidden">Tools</span>
+      <span data-lang="fr" class="lang-hidden">Outils</span>
+    </span>
+
+    <div class="tools">
+
+      <a class="tool" href="https://signal.org/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Signal</span>
+          <span class="tool-desc" data-lang="it">Messaggistica con crittografia end-to-end di default, senza bisogno di attivare nulla.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">End-to-end encrypted messaging by default, with nothing to turn on.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Messagerie chiffrée de bout en bout par défaut, sans rien à activer.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://gnupg.org/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">GnuPG</span>
+          <span class="tool-desc" data-lang="it">Lo standard aperto per firmare e cifrare file ed email con una coppia di chiavi che resta sotto il tuo controllo.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">The open standard for signing and encrypting files and emails with a key pair that stays under your control.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">La norme ouverte pour signer et chiffrer fichiers et e-mails avec une paire de clés qui reste sous votre contrôle.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://age-encryption.org/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">age</span>
+          <span class="tool-desc" data-lang="it">Uno strumento moderno e minimale per cifrare file, pensato per essere semplice da usare bene.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">A modern, minimal tool for encrypting files, designed to be simple to use correctly.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Un outil moderne et minimaliste pour chiffrer des fichiers, pensé pour être simple à bien utiliser.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p data-lang="it">Ghost Manifesto — un punto fermo, non un prodotto.</p>
+  <p data-lang="en" class="lang-hidden">Ghost Manifesto — a stake in the ground, not a product.</p>
+  <p data-lang="fr" class="lang-hidden">Ghost Manifesto — un point d'ancrage, non un produit.</p>
+  <p data-lang="it">Nessun dato personale viene raccolto o trattato. Nessun cookie viene installato.</p>
+  <p data-lang="en" class="lang-hidden">No personal data is collected or processed. No cookies are set.</p>
+  <p data-lang="fr" class="lang-hidden">Aucune donnée personnelle n'est collectée ni traitée. Aucun cookie n'est déposé.</p>
+</footer>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('lang-hidden', el.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.body.className = 'lang-' + lang;
+    try{ sessionStorage.setItem('gm-lang', lang); }catch(e){}
+  }
+
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
+  });
+
+  var storedLang;
+  try{ storedLang = sessionStorage.getItem('gm-lang'); }catch(e){}
+  setLang(storedLang || 'en');
+</script>
+
+</body>
+</html>

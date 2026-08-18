@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silenzio digitale — Ghost Manifesto</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .theme-hero{
+    min-height: 46vh;
+    padding-top: 140px;
+  }
+  .theme-hero .hero-title{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+  .theme-hero .hero-ghost{ font-size: clamp(1.9rem, 6.5vw, 4.2rem); }
+
+  .back-link{
+    display:inline-block;
+    margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ash);
+    text-decoration: none;
+  }
+  .back-link:hover{ color: var(--patina); }
+
+  .tools{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .tool{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    color: inherit;
+  }
+  .tool:last-child{ border-bottom: none; }
+  .tool-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--bone);
+  }
+  .tool-desc{
+    display:block;
+    margin-top: 4px;
+    font-size: 0.92rem;
+    color: var(--ash);
+    font-family: 'Newsreader', serif;
+  }
+  .tool-arrow{
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--patina);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="wordmark">GHOST<span>MANIFESTO</span></a>
+  <nav class="topnav">
+    <div class="langs" role="group" aria-label="Lingua / Language / Langue">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="fr">FR</button>
+      <button type="button" data-set-lang="it">IT</button>
+    </div>
+    <div class="pages">
+      <a href="../index.html#about"><span data-lang="it">About</span><span data-lang="en" class="lang-hidden">About</span><span data-lang="fr" class="lang-hidden">À propos</span></a>
+      <a href="../index.html#temi"><span data-lang="it">Temi</span><span data-lang="en" class="lang-hidden">Themes</span><span data-lang="fr" class="lang-hidden">Thèmes</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero theme-hero">
+    <div class="hero-ghost" aria-hidden="true">SILENZIO DIGITALE</div>
+    <h1 class="hero-title">
+      <span data-lang="it">Silenzio digitale</span>
+      <span data-lang="en" class="lang-hidden">Digital Silence</span>
+      <span data-lang="fr" class="lang-hidden">Silence numérique</span>
+    </h1>
+    <p class="hero-sub" data-lang="it">Lo spazio vuoto dove il pensiero torna a formarsi.</p>
+    <p class="hero-sub lang-hidden" data-lang="en">The empty space where thought forms again.</p>
+    <p class="hero-sub lang-hidden" data-lang="fr">L'espace vide où la pensée se reforme.</p>
+  </section>
+
+  <section>
+    <a class="back-link" href="../index.html">
+      <span data-lang="it">← Torna al Manifesto</span>
+      <span data-lang="en" class="lang-hidden">← Back to the Manifesto</span>
+      <span data-lang="fr" class="lang-hidden">← Retour au Manifeste</span>
+    </a>
+
+    <div class="about">
+      <p data-lang="it">Il rumore non è solo fastidioso: è produttivo, per chi lo genera. Ogni notifica interrotta a metà, ogni piattaforma che non vuole mai restare in silenzio, ha un incentivo preciso a non lasciarti pensare troppo a lungo senza intervenire.</p>
+      <p data-lang="en" class="lang-hidden">Noise isn't just annoying: it's productive, for whoever generates it. Every notification cut short, every platform that never wants to stay quiet, has a precise incentive not to let you think for too long without stepping in.</p>
+      <p data-lang="fr" class="lang-hidden">Le bruit n'est pas seulement gênant : il est productif, pour celui qui le génère. Chaque notification interrompue à mi-chemin, chaque plateforme qui ne veut jamais rester silencieuse, a un intérêt précis à ne pas vous laisser penser trop longtemps sans intervenir.</p>
+
+      <p data-lang="it">Il silenzio digitale non è l'assenza di tecnologia — è uno spazio che scegli di lasciare vuoto apposta, sapendo che qualcosa nasce solo lì: un pensiero non interrotto, una noia che si scioglie in un'idea, il tempo di accorgersi di cosa stavi effettivamente cercando prima di aprire lo schermo.</p>
+      <p data-lang="en" class="lang-hidden">Digital silence isn't the absence of technology — it's a space you deliberately choose to leave empty, knowing that something is only born there: an uninterrupted thought, boredom that dissolves into an idea, the time to notice what you were actually looking for before you opened the screen.</p>
+      <p data-lang="fr" class="lang-hidden">Le silence numérique n'est pas l'absence de technologie — c'est un espace que vous choisissez délibérément de laisser vide, sachant que quelque chose ne naît que là : une pensée ininterrompue, un ennui qui se dissout en une idée, le temps de remarquer ce que vous cherchiez réellement avant d'allumer l'écran.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">
+      <span data-lang="it">Strumenti</span>
+      <span data-lang="en" class="lang-hidden">Tools</span>
+      <span data-lang="fr" class="lang-hidden">Outils</span>
+    </span>
+
+    <div class="tools">
+
+      <a class="tool" href="https://selfcontrolapp.com/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">SelfControl</span>
+          <span class="tool-desc" data-lang="it">Blocca siti e servizi per un tempo che scegli tu — e non si può disattivare prima, nemmeno riavviando il computer.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">Blocks sites and services for a time you set — and it can't be turned off early, not even by restarting the computer.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Bloque sites et services pendant une durée que vous choisissez — et impossible de le désactiver avant, même en redémarrant l'ordinateur.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://www.proginosko.com/leechblock/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">LeechBlock NG</span>
+          <span class="tool-desc" data-lang="it">Estensione open source per programmare finestre di blocco reali sui siti che ti distraggono di più, con orari che decidi tu.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">An open-source extension for scheduling real blocking windows on the sites that distract you most, on a schedule you decide.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Extension open source pour programmer de vraies fenêtres de blocage sur les sites qui vous distraient le plus, selon un horaire que vous décidez.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://f-droid.org/en/packages/com.flx_apps.digitaldetox/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">DetoxDroid</span>
+          <span class="tool-desc" data-lang="it">App Android open source che disattiva a orari programmati le distrazioni sul telefono — il silenzio come impostazione predefinita, non come eccezione.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">Open-source Android app that switches off distractions on your phone at scheduled times — silence as the default, not the exception.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Application Android open source qui désactive les distractions sur le téléphone à des horaires programmés — le silence comme réglage par défaut, pas comme exception.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p data-lang="it">Ghost Manifesto — un punto fermo, non un prodotto.</p>
+  <p data-lang="en" class="lang-hidden">Ghost Manifesto — a stake in the ground, not a product.</p>
+  <p data-lang="fr" class="lang-hidden">Ghost Manifesto — un point d'ancrage, non un produit.</p>
+  <p data-lang="it">Nessun dato personale viene raccolto o trattato. Nessun cookie viene installato.</p>
+  <p data-lang="en" class="lang-hidden">No personal data is collected or processed. No cookies are set.</p>
+  <p data-lang="fr" class="lang-hidden">Aucune donnée personnelle n'est collectée ni traitée. Aucun cookie n'est déposé.</p>
+</footer>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('lang-hidden', el.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.body.className = 'lang-' + lang;
+    try{ sessionStorage.setItem('gm-lang', lang); }catch(e){}
+  }
+
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
+  });
+
+  var storedLang;
+  try{ storedLang = sessionStorage.getItem('gm-lang'); }catch(e){}
+  setLang(storedLang || 'en');
+</script>
+
+</body>
+</html>

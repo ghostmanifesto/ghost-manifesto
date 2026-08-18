@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blockchain — Ghost Manifesto</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .theme-hero{
+    min-height: 46vh;
+    padding-top: 140px;
+  }
+  .theme-hero .hero-title{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+  .theme-hero .hero-ghost{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+
+  .back-link{
+    display:inline-block;
+    margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ash);
+    text-decoration: none;
+  }
+  .back-link:hover{ color: var(--patina); }
+
+  .tools{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .tool{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    color: inherit;
+  }
+  .tool:last-child{ border-bottom: none; }
+  .tool-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--bone);
+  }
+  .tool-desc{
+    display:block;
+    margin-top: 4px;
+    font-size: 0.92rem;
+    color: var(--ash);
+    font-family: 'Newsreader', serif;
+  }
+  .tool-arrow{
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--patina);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="wordmark">GHOST<span>MANIFESTO</span></a>
+  <nav class="topnav">
+    <div class="langs" role="group" aria-label="Lingua / Language / Langue">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="fr">FR</button>
+      <button type="button" data-set-lang="it">IT</button>
+    </div>
+    <div class="pages">
+      <a href="../index.html#about"><span data-lang="it">About</span><span data-lang="en" class="lang-hidden">About</span><span data-lang="fr" class="lang-hidden">À propos</span></a>
+      <a href="../index.html#temi"><span data-lang="it">Temi</span><span data-lang="en" class="lang-hidden">Themes</span><span data-lang="fr" class="lang-hidden">Thèmes</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero theme-hero">
+    <div class="hero-ghost" aria-hidden="true">BLOCKCHAIN</div>
+    <h1 class="hero-title">
+      <span data-lang="it">Blockchain</span>
+      <span data-lang="en" class="lang-hidden">Blockchain</span>
+      <span data-lang="fr" class="lang-hidden">Blockchain</span>
+    </h1>
+    <p class="hero-sub" data-lang="it">Pagamenti che nessun intermediario può bloccare in tuo nome.</p>
+    <p class="hero-sub lang-hidden" data-lang="en">Payments no intermediary can block in your name.</p>
+    <p class="hero-sub lang-hidden" data-lang="fr">Des paiements qu'aucun intermédiaire ne peut bloquer en votre nom.</p>
+  </section>
+
+  <section>
+    <a class="back-link" href="../index.html">
+      <span data-lang="it">← Torna al Manifesto</span>
+      <span data-lang="en" class="lang-hidden">← Back to the Manifesto</span>
+      <span data-lang="fr" class="lang-hidden">← Retour au Manifeste</span>
+    </a>
+
+    <div class="about">
+      <p data-lang="it">Chiudere un conto, congelare una carta, rifiutare una transazione: bastano queste tre mosse per far sparire una voce, un'organizzazione, una causa — senza processo, senza spiegazione, senza appello. Non serve censurare le parole se si può censurare il modo in cui quelle parole si sostengono. Una rete di pagamento che non passa da un singolo intermediario, e che non lega ogni transazione a un'identità dichiarata, non è un espediente per nascondersi: è l'equivalente finanziario di parlare senza dover chiedere il permesso a chi controlla il microfono.</p>
+      <p data-lang="en" class="lang-hidden">Freezing an account, blocking a card, refusing a transaction: it takes just three moves to make a voice, an organization, a cause disappear — without a trial, without an explanation, without appeal. You don't need to censor words if you can censor how those words get funded. A payment network that doesn't run through a single intermediary, and doesn't tie every transaction to a declared identity, isn't a trick for hiding — it's the financial equivalent of speaking without having to ask permission from whoever controls the microphone.</p>
+      <p data-lang="fr" class="lang-hidden">Fermer un compte, bloquer une carte, refuser une transaction : il suffit de ces trois gestes pour faire disparaître une voix, une organisation, une cause — sans procès, sans explication, sans recours. Il n'est pas nécessaire de censurer les mots si l'on peut censurer la façon dont ces mots sont financés. Un réseau de paiement qui ne passe pas par un intermédiaire unique, et qui ne lie pas chaque transaction à une identité déclarée, n'est pas un artifice pour se cacher : c'est l'équivalent financier de parler sans devoir demander la permission à celui qui contrôle le microphone.</p>
+
+      <p data-lang="it">"Pseudonimizzato" non è "anonimo": ogni indirizzo lascia una traccia, solo non porta già scritto sopra un nome. La differenza conta — è la stessa differenza tra una porta chiusa e una porta senza serratura. Usare questi strumenti non significa evadere le regole: significa rifiutare che l'accesso a uno strumento economico di base dipenda dal giudizio di chi, in quel momento, decide chi merita di essere pagato.</p>
+      <p data-lang="en" class="lang-hidden">"Pseudonymous" isn't "anonymous": every address leaves a trail, it just doesn't come with a name already written on it. The difference matters — it's the same difference between a locked door and a door with no lock at all. Using these tools doesn't mean evading the rules: it means refusing to let access to a basic economic tool depend on the judgment of whoever, at that moment, decides who deserves to get paid.</p>
+      <p data-lang="fr" class="lang-hidden">« Pseudonymisé » n'est pas « anonyme » : chaque adresse laisse une trace, elle n'arrive simplement pas avec un nom déjà inscrit dessus. La différence compte — c'est la même différence qu'entre une porte fermée à clé et une porte sans serrure. Utiliser ces outils ne signifie pas échapper aux règles : cela signifie refuser que l'accès à un outil économique de base dépende du jugement de celui qui, à ce moment-là, décide qui mérite d'être payé.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">
+      <span data-lang="it">Strumenti</span>
+      <span data-lang="en" class="lang-hidden">Tools</span>
+      <span data-lang="fr" class="lang-hidden">Outils</span>
+    </span>
+
+    <div class="tools">
+
+      <a class="tool" href="https://bitcoin.org/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Bitcoin</span>
+          <span class="tool-desc" data-lang="it">La prima rete di pagamento che non richiede il permesso di una banca o di un governo per funzionare.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">The first payment network that doesn't need a bank's or a government's permission to work.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Le premier réseau de paiement qui ne nécessite la permission d'aucune banque ni d'aucun gouvernement pour fonctionner.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://www.getmonero.org/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Monero</span>
+          <span class="tool-desc" data-lang="it">Una criptovaluta pensata per essere privata di default, non come opzione: mittente, importo e destinatario restano oscurati.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">A cryptocurrency designed to be private by default, not as an option: sender, amount, and recipient stay obscured.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Une cryptomonnaie conçue pour être privée par défaut, et non en option : expéditeur, montant et destinataire restent masqués.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://sparrowwallet.com/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Sparrow Wallet</span>
+          <span class="tool-desc" data-lang="it">Un portafoglio non-custodial: le chiavi restano tue, nessuna piattaforma può congelarle al posto tuo.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">A non-custodial wallet: the keys stay yours, no platform can freeze them on your behalf.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Un portefeuille non-custodial : les clés vous appartiennent, aucune plateforme ne peut les geler à votre place.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p data-lang="it">Ghost Manifesto — un punto fermo, non un prodotto.</p>
+  <p data-lang="en" class="lang-hidden">Ghost Manifesto — a stake in the ground, not a product.</p>
+  <p data-lang="fr" class="lang-hidden">Ghost Manifesto — un point d'ancrage, non un produit.</p>
+  <p data-lang="it">Nessun dato personale viene raccolto o trattato. Nessun cookie viene installato.</p>
+  <p data-lang="en" class="lang-hidden">No personal data is collected or processed. No cookies are set.</p>
+  <p data-lang="fr" class="lang-hidden">Aucune donnée personnelle n'est collectée ni traitée. Aucun cookie n'est déposé.</p>
+</footer>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('lang-hidden', el.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.body.className = 'lang-' + lang;
+    try{ sessionStorage.setItem('gm-lang', lang); }catch(e){}
+  }
+
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
+  });
+
+  var storedLang;
+  try{ storedLang = sessionStorage.getItem('gm-lang'); }catch(e){}
+  setLang(storedLang || 'en');
+</script>
+
+</body>
+</html>

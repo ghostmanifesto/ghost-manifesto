@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sovranità dei dati — Ghost Manifesto</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .theme-hero{
+    min-height: 46vh;
+    padding-top: 140px;
+  }
+  .theme-hero .hero-title{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+  .theme-hero .hero-ghost{ font-size: clamp(1.8rem, 6vw, 4rem); }
+
+  .back-link{
+    display:inline-block;
+    margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ash);
+    text-decoration: none;
+  }
+  .back-link:hover{ color: var(--patina); }
+
+  .tools{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .tool{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    color: inherit;
+  }
+  .tool:last-child{ border-bottom: none; }
+  .tool-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--bone);
+  }
+  .tool-desc{
+    display:block;
+    margin-top: 4px;
+    font-size: 0.92rem;
+    color: var(--ash);
+    font-family: 'Newsreader', serif;
+  }
+  .tool-arrow{
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--patina);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="wordmark">GHOST<span>MANIFESTO</span></a>
+  <nav class="topnav">
+    <div class="langs" role="group" aria-label="Lingua / Language / Langue">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="fr">FR</button>
+      <button type="button" data-set-lang="it">IT</button>
+    </div>
+    <div class="pages">
+      <a href="../index.html#about"><span data-lang="it">About</span><span data-lang="en" class="lang-hidden">About</span><span data-lang="fr" class="lang-hidden">À propos</span></a>
+      <a href="../index.html#temi"><span data-lang="it">Temi</span><span data-lang="en" class="lang-hidden">Themes</span><span data-lang="fr" class="lang-hidden">Thèmes</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero theme-hero">
+    <div class="hero-ghost" aria-hidden="true">SOVRANITÀ DEI DATI</div>
+    <h1 class="hero-title">
+      <span data-lang="it">Sovranità dei dati</span>
+      <span data-lang="en" class="lang-hidden">Data Sovereignty</span>
+      <span data-lang="fr" class="lang-hidden">Souveraineté des données</span>
+    </h1>
+    <p class="hero-sub" data-lang="it">I tuoi dati raccontano di te più di quanto tu stesso ricordi.</p>
+    <p class="hero-sub lang-hidden" data-lang="en">Your data tells more about you than you remember yourself.</p>
+    <p class="hero-sub lang-hidden" data-lang="fr">Vos données en disent plus sur vous que vous ne vous en souvenez.</p>
+  </section>
+
+  <section>
+    <a class="back-link" href="../index.html">
+      <span data-lang="it">← Torna al Manifesto</span>
+      <span data-lang="en" class="lang-hidden">← Back to the Manifesto</span>
+      <span data-lang="fr" class="lang-hidden">← Retour au Manifeste</span>
+    </a>
+
+    <div class="about">
+      <p data-lang="it">Ogni servizio gratuito che usi ha un modello di business, anche quando non lo dichiara. Se non stai pagando con denaro, il prodotto che genera valore per qualcun altro è il profilo che si costruisce di te — le tue abitudini, i tuoi orari, le persone che conosci, le cose che ti fanno esitare prima di comprare.</p>
+      <p data-lang="en" class="lang-hidden">Every free service you use has a business model, even when it doesn't state one. If you aren't paying with money, the product generating value for someone else is the profile being built of you — your habits, your schedule, the people you know, the things that make you hesitate before buying.</p>
+      <p data-lang="fr" class="lang-hidden">Chaque service gratuit que vous utilisez a un modèle économique, même quand il ne l'affiche pas. Si vous ne payez pas avec de l'argent, le produit qui génère de la valeur pour quelqu'un d'autre, c'est le profil que l'on construit de vous — vos habitudes, vos horaires, les personnes que vous connaissez, ce qui vous fait hésiter avant d'acheter.</p>
+
+      <p data-lang="it">Sovranità non significa sparire dai radar (quella è un'altra battaglia): significa sapere dove vivono i tuoi dati, poterli spostare, poterli cancellare — e poter scegliere, quando possibile, che a conservarli sia un sistema che risponde a te e non a un investitore.</p>
+      <p data-lang="en" class="lang-hidden">Sovereignty doesn't mean disappearing from the radar (that's a different battle): it means knowing where your data lives, being able to move it, being able to delete it — and being able to choose, when possible, a system that answers to you rather than to an investor.</p>
+      <p data-lang="fr" class="lang-hidden">La souveraineté ne signifie pas disparaître des radars (c'est une autre bataille) : cela signifie savoir où vivent vos données, pouvoir les déplacer, pouvoir les supprimer — et pouvoir choisir, quand c'est possible, un système qui répond de vous et non d'un investisseur.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">
+      <span data-lang="it">Strumenti</span>
+      <span data-lang="en" class="lang-hidden">Tools</span>
+      <span data-lang="fr" class="lang-hidden">Outils</span>
+    </span>
+
+    <div class="tools">
+
+      <a class="tool" href="https://nextcloud.com/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Nextcloud</span>
+          <span class="tool-desc" data-lang="it">Un cloud che puoi ospitare tu stesso: file, calendario e contatti fuori dai server di qualcun altro.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">A cloud you can host yourself: files, calendar and contacts, out of someone else's servers.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Un cloud que vous pouvez héberger vous-même : fichiers, calendrier et contacts, hors des serveurs de quelqu'un d'autre.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://ente.io/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">ente</span>
+          <span class="tool-desc" data-lang="it">Backup di foto cifrato end-to-end: nemmeno chi lo ospita può vedere cosa conservi.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">End-to-end encrypted photo backup: not even the host can see what you keep.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Sauvegarde de photos chiffrée de bout en bout : même l'hébergeur ne peut voir ce que vous conservez.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://standardnotes.com/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Standard Notes</span>
+          <span class="tool-desc" data-lang="it">Note cifrate e portabili, pensate per restare leggibili anche tra dieci anni.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">Encrypted, portable notes, built to stay readable even ten years from now.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Notes chiffrées et portables, pensées pour rester lisibles même dans dix ans.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p data-lang="it">Ghost Manifesto — un punto fermo, non un prodotto.</p>
+  <p data-lang="en" class="lang-hidden">Ghost Manifesto — a stake in the ground, not a product.</p>
+  <p data-lang="fr" class="lang-hidden">Ghost Manifesto — un point d'ancrage, non un produit.</p>
+  <p data-lang="it">Nessun dato personale viene raccolto o trattato. Nessun cookie viene installato.</p>
+  <p data-lang="en" class="lang-hidden">No personal data is collected or processed. No cookies are set.</p>
+  <p data-lang="fr" class="lang-hidden">Aucune donnée personnelle n'est collectée ni traitée. Aucun cookie n'est déposé.</p>
+</footer>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('lang-hidden', el.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.body.className = 'lang-' + lang;
+    try{ sessionStorage.setItem('gm-lang', lang); }catch(e){}
+  }
+
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
+  });
+
+  var storedLang;
+  try{ storedLang = sessionStorage.getItem('gm-lang'); }catch(e){}
+  setLang(storedLang || 'en');
+</script>
+
+</body>
+</html>

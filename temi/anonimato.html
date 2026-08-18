@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anonimato — Ghost Manifesto</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* stili specifici di questa pagina tema, sopra alla base condivisa */
+  .theme-hero{
+    min-height: 46vh;
+    padding-top: 140px;
+  }
+  .theme-hero .hero-title{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+  .theme-hero .hero-ghost{ font-size: clamp(2.2rem, 7vw, 4.5rem); }
+
+  .back-link{
+    display:inline-block;
+    margin-bottom: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ash);
+    text-decoration: none;
+  }
+  .back-link:hover{ color: var(--patina); }
+
+  .tools{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .tool{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    color: inherit;
+  }
+  .tool:last-child{ border-bottom: none; }
+  .tool-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--bone);
+  }
+  .tool-desc{
+    display:block;
+    margin-top: 4px;
+    font-size: 0.92rem;
+    color: var(--ash);
+    font-family: 'Newsreader', serif;
+  }
+  .tool-arrow{
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--patina);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="../index.html" class="wordmark">GHOST<span>MANIFESTO</span></a>
+  <nav class="topnav">
+    <div class="langs" role="group" aria-label="Lingua / Language / Langue">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="fr">FR</button>
+      <button type="button" data-set-lang="it">IT</button>
+    </div>
+    <div class="pages">
+      <a href="../index.html#about"><span data-lang="it">About</span><span data-lang="en" class="lang-hidden">About</span><span data-lang="fr" class="lang-hidden">À propos</span></a>
+      <a href="../index.html#temi"><span data-lang="it">Temi</span><span data-lang="en" class="lang-hidden">Themes</span><span data-lang="fr" class="lang-hidden">Thèmes</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero theme-hero">
+    <div class="hero-ghost" aria-hidden="true">ANONIMATO</div>
+    <h1 class="hero-title">
+      <span data-lang="it">Anonimato</span>
+      <span data-lang="en" class="lang-hidden">Anonymity</span>
+      <span data-lang="fr" class="lang-hidden">Anonymat</span>
+    </h1>
+    <p class="hero-sub" data-lang="it">Sparire dai radar senza sparire dal mondo.</p>
+    <p class="hero-sub lang-hidden" data-lang="en">Disappearing from the radar without disappearing from the world.</p>
+    <p class="hero-sub lang-hidden" data-lang="fr">Disparaître des radars sans disparaître du monde.</p>
+  </section>
+
+  <section>
+    <a class="back-link" href="../index.html">
+      <span data-lang="it">← Torna al Manifesto</span>
+      <span data-lang="en" class="lang-hidden">← Back to the Manifesto</span>
+      <span data-lang="fr" class="lang-hidden">← Retour au Manifeste</span>
+    </a>
+
+    <div class="about">
+      <p data-lang="it">Essere anonimi non significa avere qualcosa da nascondere. Significa avere il diritto di scegliere cosa mostrare, a chi, e quando. In un sistema che trasforma ogni traccia in un dato di valore, restare illeggibili è una forma di autodifesa — non una fuga.</p>
+      <p data-lang="en" class="lang-hidden">Being anonymous doesn't mean having something to hide. It means having the right to choose what to show, to whom, and when. In a system that turns every trace into valuable data, staying unreadable is a form of self-defense — not an escape.</p>
+      <p data-lang="fr" class="lang-hidden">Être anonyme ne signifie pas avoir quelque chose à cacher. Cela signifie avoir le droit de choisir ce que l'on montre, à qui, et quand. Dans un système qui transforme chaque trace en donnée de valeur, rester illisible est une forme d'autodéfense — non une fuite.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">
+      <span data-lang="it">Strumenti</span>
+      <span data-lang="en" class="lang-hidden">Tools</span>
+      <span data-lang="fr" class="lang-hidden">Outils</span>
+    </span>
+
+    <div class="tools">
+
+      <a class="tool" href="https://www.torproject.org/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Tor Browser</span>
+          <span class="tool-desc" data-lang="it">Naviga instradando il traffico attraverso una rete distribuita, rendendo difficile risalire a te.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">Browses by routing traffic through a distributed network, making it hard to trace back to you.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Navigue en acheminant le trafic à travers un réseau distribué, rendant difficile de remonter jusqu'à vous.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://tails.net/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Tails</span>
+          <span class="tool-desc" data-lang="it">Sistema operativo live che non lascia traccia sul computer che usi.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">A live operating system that leaves no trace on the computer you use.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Système d'exploitation live qui ne laisse aucune trace sur l'ordinateur utilisé.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+      <a class="tool" href="https://protonvpn.com/" target="_blank" rel="noopener">
+        <span>
+          <span class="tool-name">Proton VPN</span>
+          <span class="tool-desc" data-lang="it">Instrada la connessione attraverso server cifrati, con politiche di no-log verificate.</span>
+          <span class="tool-desc lang-hidden" data-lang="en">Routes your connection through encrypted servers, with audited no-log policies.</span>
+          <span class="tool-desc lang-hidden" data-lang="fr">Achemine votre connexion via des serveurs chiffrés, avec des politiques de non-conservation des journaux vérifiées.</span>
+        </span>
+        <span class="tool-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p data-lang="it">Ghost Manifesto — un punto fermo, non un prodotto.</p>
+  <p data-lang="en" class="lang-hidden">Ghost Manifesto — a stake in the ground, not a product.</p>
+  <p data-lang="fr" class="lang-hidden">Ghost Manifesto — un point d'ancrage, non un produit.</p>
+  <p data-lang="it">Nessun dato personale viene raccolto o trattato. Nessun cookie viene installato.</p>
+  <p data-lang="en" class="lang-hidden">No personal data is collected or processed. No cookies are set.</p>
+  <p data-lang="fr" class="lang-hidden">Aucune donnée personnelle n'est collectée ni traitée. Aucun cookie n'est déposé.</p>
+</footer>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('lang-hidden', el.getAttribute('data-lang') !== lang);
+    });
+    document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.body.className = 'lang-' + lang;
+    try{ sessionStorage.setItem('gm-lang', lang); }catch(e){}
+  }
+
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
+  });
+
+  var storedLang;
+  try{ storedLang = sessionStorage.getItem('gm-lang'); }catch(e){}
+  setLang(storedLang || 'en');
+</script>
+
+</body>
+</html>
