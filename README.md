@@ -6,7 +6,7 @@ identity — plus a series of theme pages that dig into specific topics
 (anonymity, encryption, blockchain, free software...) with concrete,
 open-source tools.
 
-**Live site:** https://TUO-USERNAME.github.io/ghost-manifesto/
+**Live site:** https://ghostmanifesto.github.io/ghost-manifesto/
 
 ## What it is
 
